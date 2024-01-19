@@ -1,0 +1,74 @@
+<!-- <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/"><h1>WeatherBuddy</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/forecast">Forecast</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div class="w3-container" style="background-color: #28282B;">
+  <h1 style="color: white;">WeatherBuddy</h1>
+  <p style ="color: white;">Count on us to give you your most reliable weather forecast</p>
+
+  <div class="w3-bar w3-light-grey">
+    <a href="/" class="w3-bar-item w3-button">Home</a>
+    <a href="/about" class="w3-bar-item w3-button">About</a>
+  
+
+    
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Forecast <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="/forecast" class="w3-bar-item w3-button">5 Day Forecast</a>
+        <a href="/forecast" class="w3-bar-item w3-button">7 Day Forecast</a>
+        <a href="/forecast" class="w3-bar-item w3-button">14 Day Forecast</a>
+
+      </div>
+    </div>
+          <form action="/city" method="get">
+          <input type="text" class="w3-bar-item w3-input" name="city" placeholder="Search city...">
+          <button type="submit" class="w3-bar-item w3-button w3-green" >Get weather data</button>
+        </form>
+
+  
+    
+    <a href="/login" class="w3-bar-item w3-button w3-blue w3-right">Login</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>

@@ -1,0 +1,6 @@
+{
+    "livePreview.defaultPreviewPath": "/views/dd.html",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
+}

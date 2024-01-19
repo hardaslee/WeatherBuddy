@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        code {
+            font-family: Consolas, Monaco, monospace;
+        }
+        p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather API Documentation</h1>
+
+    <h2>Get Weather Data</h2>
+    <p>Endpoint: <code>/api/weather</code></p>
+    <p>Method: <code>GET</code></p>
+    <p>Description: Retrieve weather data for different cities.</p>
+
+    <h3>Example Request</h3>
+    <pre><code>GET /api/weather</code></pre>
+
+    <h3>Example Response</h3>
+    <pre><code>
+    [
+        {
+            "temperature": 20,
+            "city": "Montreal",
+            "weatherDescription": "Clear sky",
+            "humidity": 60,
+            "windSpeed": 10
+        },
+        {
+            "temperature": 25,
+            "city": "New York",
+            "weatherDescription": "Partly cloudy",
+            "humidity": 55,
+            "windSpeed": 12
+        },
+        {
+            "temperature": 15,
+            "city": "London",
+            "weatherDescription": "Rainy",
+            "humidity": 75,
+            "windSpeed": 8
+        },
+        {
+            "temperature": 30,
+            "city": "Los Angeles",
+            "weatherDescription": "Sunny",
+            "humidity": 40,
+            "windSpeed": 5
+        },
+        {
+            "temperature": 22,
+            "city": "Paris",
+            "weatherDescription": "Partly cloudy",
+            "humidity": 65,
+            "windSpeed": 14
+        },
+        {
+            "temperature": 18,
+            "city": "Tokyo",
+            "weatherDescription": "Overcast",
+            "humidity": 70,
+            "windSpeed": 7
+        },
+        {
+            "temperature": 27,
+            "city": "Sydney",
+            "weatherDescription": "Sunny",
+            "humidity": 50,
+            "windSpeed": 11
+        },
+        {
+            "temperature": 28,
+            "city": "Miami",
+            "weatherDescription": "Clear sky",
+            "humidity": 55,
+            "windSpeed": 9
+        },
+        {
+            "temperature": 10,
+            "city": "Berlin",
+            "weatherDescription": "Snowy",
+            "humidity": 80,
+            "windSpeed": 6
+        },
+        {
+            "temperature": 32,
+            "city": "Dubai",
+            "weatherDescription": "Hot and sunny",
+            "humidity": 35,
+            "windSpeed": 15
+        },
+        {
+            "temperature": 23,
+            "city": "Rio de Janeiro",
+            "weatherDescription": "Partly cloudy",
+            "humidity": 65,
+            "windSpeed": 13
+        },
+        {
+            "temperature": 17,
+            "city": "Toronto",
+            "weatherDescription": "Foggy",
+            "humidity": 70,
+            "windSpeed": 4
+        },
+        {
+            "temperature": 19,
+            "city": "Amsterdam",
+            "weatherDescription": "Rainy",
+            "humidity": 75,
+            "windSpeed": 10
+        },
+        {
+            "temperature": 26,
+            "city": "Cairo",
+            "weatherDescription": "Sunny",
+            "humidity": 45,
+            "windSpeed": 8
+        },
+        {
+            "temperature": 21,
+            "city": "San Francisco",
+            "weatherDescription": "Partly cloudy",
+            "humidity": 60,
+            "windSpeed": 12
+        }
+    ]
+    </code></pre>
+
+    <h3>Notes</h3>
+    <p>- The API returns weather data in JSON format.</p>
+    <p>- You can make requests to this endpoint to get weather data for different cities.</p>
+
+    <h2>Errors</h2>
+    <p>If there's an error in your request, the API will return an error response with the appropriate status code and message.</p>
+
+    <!-- You can add more documentation sections as needed -->
+</body>
+</html>
